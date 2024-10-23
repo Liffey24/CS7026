@@ -4,32 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio style.css">
+    <link rel="stylesheet" href="assets/style/portfolio style.css">
+    <script src="portfolio script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="portfolio homepage.html">Home</a></li>
-                <li><a href="assets/pages/portfolio about me.html">About Me</a></li>
-                <li><a href="assets/pages/portfolio resume page.html">Resume</a></li>
-                <li><a href="assets/pages/projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        
+        <div class="topnav">
+            <a class="active" href="portfolio homepage.html">Home</a>
+            <a href="assets/pages/portfolio resume page.html">Resume</a>
+            <a href= "assets/pages/projects.html">Projects</a>
+            <a href= "assets/pages/portfolio about me.html">About Me</a>
+          </div>
+          
     </header>
 
     <main>
         <section>
-            <h2>Welcome!</h2>
-            <p>This is a showcase of my work in web development, design, and interactive media.</p>
+            <h1>Kiera O'Hara</h1>
+            <div class="homemain">
+                <img src="assets/images/lourvepic.jpg" class="home_image">
+               <div class="hometext">
+            <p>Hi! I'm Kiera. I am a Master’s student at Trinity College Dublin, studying Interactive Digital Media. With a background in journalism, writing, and editing, I am now making the transition to focus on UX design. I am passionate about blending functionality with creativity to make meaningful digital experiences. Explore this portfolio to see some of my previous projects in web development, design, and interactive media.</p>
+      </div>
+            
+            <div class="btn-container">
+                <button class = "btn" onclick=" window.open('assets/OHaraCV24.pdf')"> Check my CV</button>
+            </div>
         </section>
-    </main>
+    </main></div>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <div class="footer">
+        <p>&copy; 2024 Kiera O'Hara</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
