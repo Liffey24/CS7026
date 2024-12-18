@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="../style/portfolio_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = ../script/portfolio_script.js></script>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="../../portfolio_homepage.html">Home</a>
+            <a href= "projects.html" class="active">Projects</a>
+            <a href= "portfolio_about_me.html">About Me</a>
+            <a href="portfolio_contact.html">Contact Me</a>
+          </div>
+
+          <div class="toggle-container">
+            <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+            <label for="darkModeToggle" class="slider"></label>
+        </div>
+       
+    </header>
+
+    <main>
+        <h1>My Photography</h1>
+        <p class=>Photography has been a hobby of mine for quite a while. I enjoy taking photos of nature, cityscapes, and my friends and family. Many of my photos are taken during my travels or my everyday life. I enjoy both digital and film photography, and have recently begun developing my own film in the darkroom, which I find gives me an exciting new sense of control over my photos. </p>
+    
+        <div class="photo-collection">
+            <h4>France on Film</h4>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <button class="prev" onclick="moveSlide(-1, 'france')">&#9664;</button>
+                    <div class="carousel-track" id="france">
+                        <div class="slide">
+                            <img src="../photos/eiffel1.jpg" alt="Eiffel Tower, Paris">
+                            <div class="caption">Looking Up, Paris, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/castle_france1.jpg" alt="Château de Chambord, France">
+                            <div class="caption">Tower of Château de Chambord, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/castle_france2.jpg" alt="Château de Chambord, France">
+                            <div class="caption">The long walk, Château de Chambord, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/castle_france3.jpg" alt="Château de Chenonceau, France">
+                            <div class="caption">Château de Chenonceau, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/pond_france.jpg" alt="Pond, France">
+                            <div class="caption">Château de Vaux-le-Vicomte, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/france st 2.jpg" alt="Pont de Bir-Hakeim, Paris">
+                            <div class="caption">Pont de Bir-Hakeim, Paris, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/montemart 1.jpg" alt="Montemart, Paris">
+                            <div class="caption">Montmarte, Paris, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/car at montemart.jpg" alt="Car at Montemart, Paris">
+                            <div class="caption">Car at Montemart, Paris, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/france_st.jpg" alt="View of Pont de Bir-Hakeim, Paris">
+                            <div class="caption">Pont de Bir-Hakeim, Paris, 2024, 35mm Film</div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/montemart 2.jpg" alt="Montemart, Paris">
+                            <div class="caption">Montmarte, Paris, 2024, 35mm Film</div>
+                        </div>
+                    </div>
+                    <button class="next" onclick="moveSlide(1, 'france')">&#9654;</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="photo-collection">
+            <h4> Dublin in Black and White</h4>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <button class="prev" onclick="moveSlide(-1, 'urban')">&#9664;</button>
+                    <div class="carousel-track" id="urban">
+                        <div class="slide">
+                            <img src="../photos/gpo_bw.jpg" alt="General Post Office, Dublin">
+                            <div class="caption">General Post Office, Dublin, 2024, Kodak Double-X B&W 35mm Film </div>
+                        </div>
+                        <div class="slide">
+                            <img src="../photos/grafton_bw.jpg" alt="Pigeons near Grafton Street, Dublin">
+                            <div class="caption">Pigeons near Grafton Street, Dublin, 2024, Kodak Double-X B&W 35mm Film </div>
+                        </div>
+                    </div>
+                    <button class="next" onclick="moveSlide(1, 'urban')">&#9654;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer">
+        <p>&copy; 2024 Kiera O'Hara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/portfolio_script.js"></script>
+</body>
+</html>
